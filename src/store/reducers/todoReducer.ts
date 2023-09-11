@@ -18,7 +18,7 @@ export const todoReducer = (
 		case ETodoActionTypes.FETCH_TODOS_SUCCESS:
 			return { ...state, loading: false, todos: action.payload }
 		case ETodoActionTypes.FETCH_TODOS_ERROR:
-			return { ...state, error: action.payload }
+			return { ...state, loading: false, error: action.payload }
 		case ETodoActionTypes.SET_TODO_PAGE:
 			return { ...state, page: action.payload }
 		default:

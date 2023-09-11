@@ -21,7 +21,7 @@ export const fetchTodos = (page = 1, limit = 10) => {
 		} catch (e) {
 			dispatch({
 				type: ETodoActionTypes.FETCH_TODOS_ERROR,
-				payload: `Can't faetch todos data: ${e}`,
+				payload: `Can't fetch todos data: ${e}`,
 			})
 		}
 	}
